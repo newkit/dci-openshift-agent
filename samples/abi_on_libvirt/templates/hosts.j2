@@ -283,7 +283,7 @@ all:
               addresses:
                 ipv4:
                   - ip: "{{ '{{ ansible_host}}' }}"
-                    prefix: "25"
+                    prefix: "24"
           dns_server_ips:
            - "{{ vm_bridge_ip if (setup_dns_service | default('false') | bool) else provisioner_dns }}"
           routes: # optional
